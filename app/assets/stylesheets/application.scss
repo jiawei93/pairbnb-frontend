@@ -15,22 +15,22 @@
  *= require_self
  */
 
+
 body {
   padding: 0;
   margin: 0;
-  background: 
+  background:
     linear-gradient(
-      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
-  asset_url("sample_cover.jpg") no-repeat center center fixed; 
+  asset_url("sample_cover.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
 }
-
 .hero-header {
   text-align: center;
   height: 500px;
@@ -70,7 +70,7 @@ body {
   width: 50%;
   float: left;
 }
- 
+
 /*----- Menu -----*/
   .menu {
     width:100%;
@@ -80,7 +80,7 @@ body {
 .menu ul {
   display:inline-block;
 }
- 
+
 .menu li {
   margin:0px 50px 0px 0px;
   float:left;
@@ -88,18 +88,19 @@ body {
   font-size: small;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-top: 15px;
 }
- 
+
 .menu li:last-child {
   margin-right:0px;
 }
- 
+
 .menu a {
   color:#fff;
   transition:color linear 0.15s;
   text-decoration: none;
 }
- 
+
 .menu a:hover, .menu .current-item a {
   text-decoration:none;
   color:#303030;
@@ -108,43 +109,65 @@ body {
   width:100%;
   background:#ff5a5f;
 }
- 
+
 .menu ul {
   display:inline-block;
 }
- 
+
 .menu li {
   margin:0px 50px 0px 0px;
   float:left;
   list-style:none;
   font-size:17px;
 }
- 
+
 .menu li:last-child {
   margin-right:0px;
 }
- 
+
 .menu a {
   color:#fff;
   transition:color linear 0.15s;
   text-decoration: none;
 }
- 
+
 .menu a:hover, .menu .current-item a {
   text-decoration:none;
   color:#303030;
 }
+
+@media (min-width: @screen-xs-min) {
+  .menu li {
+    font-size:12px;
+    margin:0px 20px 0px 0px;
+    letter-spacing: 3.5px;
+  }
+  .hero-header {
+    .main-text {
+      font-size:40px;
+      }
+      .sub-text {
+        font-size: 20px;
+    }
+  }
+  .para-one {
+    width: 40%;
+  }
+
+}
+
 
 #footer {
   clear: both;
   position: relative;
   z-index: 10;
   height: 3em;
-  margin-top: -3em;
+  // margin-top: -3em;
   background-color: black;
   color: white;
-  padding: 10px;
-  margin: auto;
+  padding: 1px;
+  // margin-left: auto;
+  // margin: auto;
   ul {
     li {
       float: left;
